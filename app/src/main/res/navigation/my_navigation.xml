@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/fragmentWelcome">
+
+    <fragment
+        android:id="@+id/fragmentWelcome"
+        android:name="com.example.telcellregistration.fragment.FragmentWelcome"
+        android:label="FragmentWelcome"
+        tools:layout="@layout/welcome_fragment" >
+        <action
+            android:id="@+id/action_fragmentWelcome_to_fragmentLogIn"
+            app:destination="@id/fragmentLogIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogIn"
+        android:name="com.example.telcellregistration.fragment.FragmentLogIn"
+        android:label="FragmentLogIn"
+        tools:layout="@layout/login_fragment" />
+    <fragment
+        android:id="@+id/fragmentAuthentication"
+        android:name="com.example.telcellregistration.fragment.FragmentAuthentication"
+        android:label="FragmentAuthentication"
+        tools:layout="@layout/authentication_fragment" />
+    <fragment
+        android:id="@+id/fragmentPasswordCreating"
+        android:name="com.example.telcellregistration.fragment.FragmentPasswordCreating"
+        android:label="FragmentPasswordCreating"
+        tools:layout="@layout/password_creating_layout" />
+</navigation>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/enter_button_background"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/infoTvView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="By entering to Telcell Wallet you accept its rules"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/confirmButton"
+        app:layout_constraintLeft_toLeftOf="@id/confirmButton"
+        app:layout_constraintRight_toRightOf="@id/confirmButton" />
+
+    <TextView
+        android:id="@+id/termsTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Learn about terms of offer"
+        android:textColor="@color/orange"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@id/infoTvView"
+        app:layout_constraintLeft_toLeftOf="@id/infoTvView"
+        app:layout_constraintRight_toRightOf="@id/infoTvView" />
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetingsTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Hello!"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/closeBtn"
+        app:layout_constraintLeft_toRightOf="@id/closeBtn" />
+
+    <TextView
+        android:id="@+id/loginTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greetingsTvView" />
+
+    <TextView
+        android:id="@+id/infoForLoginTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create a home for your payment"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/loginTvView"
+        app:layout_constraintRight_toRightOf="@id/loginTvView"
+        app:layout_constraintTop_toBottomOf="@id/loginTvView" />
+
+    <TextView
+        android:id="@+id/phoneNumberTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Your phone number"
+        android:textColor="@color/black_light"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/closeBtn"
+        app:layout_constraintTop_toBottomOf="@id/infoForLoginTvView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="number"
+        android:id="@+id/phoneNumberEdText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/phone_number_edit_background"
+        android:hint="+374 (**) *** ***"
+        android:paddingLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/closeBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTvView" />
+
+    <TextView
+        android:id="@+id/sampleTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sample: 77XXXXXX"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/phoneNumberEdText"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEdText" />
+
+    <ImageView
+        android:id="@+id/infoImView"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_info"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/sampleTvView"
+        app:layout_constraintTop_toBottomOf="@id/sampleTvView" />
+
+    <TextView
+        android:id="@+id/smsInfoTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:text=" An SMS with confirmation code will be sent to this
+        phone number"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/infoImView"
+        app:layout_constraintTop_toTopOf="@id/infoImView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
