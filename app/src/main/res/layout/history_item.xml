@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/historyConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/history_constraint_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/historyActionTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/history_action_name"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/historyIconImView"
+        app:layout_constraintTop_toTopOf="@id/historyIconImView" />
+
+    <TextView
+        android:id="@+id/toActionIdTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/history_toAction_id_name"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey_light"
+        app:layout_constraintLeft_toLeftOf="@id/historyActionTvView"
+        app:layout_constraintTop_toBottomOf="@id/historyActionTvView" />
+
+    <ImageView
+        android:id="@+id/historyIconImView"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top_up_icon"
+        app:layout_constraintBottom_toBottomOf="@id/historyConstraint"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/historyConstraint"
+        app:layout_constraintTop_toTopOf="@id/historyConstraint"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/amountTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/amount"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/historyConstraint"
+        app:layout_constraintTop_toTopOf="@id/historyActionTvView" />
+
+    <TextView
+        android:id="@+id/approvedTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/approved"
+        android:textColor="@color/green"
+        app:layout_constraintRight_toRightOf="@id/amountTvView"
+        app:layout_constraintTop_toTopOf="@id/toActionIdTvView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

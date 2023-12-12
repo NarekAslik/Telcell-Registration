@@ -11,4 +11,13 @@
     <color name="grey">#AFAFAF</color>
     <color name="black_light">#222121</color>
     <color name="grey_light">#EFE9E9</color>
+    <color name="blue">#05D0EA</color>
+    <color name="white1">#EDEDED</color>
+    <color name="green">#04F40D</color>
+    <color name="fillColor">#E5F0F4</color>
+    <color name="gray_50">#FCFCFC</color>
+    <color name="gray_100">#F7F8F9</color>
+    <color name="gray_200">#F2F4F5</color>
+    <color name="gray_300">#E9EFF5</color>
+    <color name="gray_400">#A7B4B9</color>
 </resources>

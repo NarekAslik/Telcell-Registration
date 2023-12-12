@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_navigation"
-    app:startDestination="@id/fragmentWelcome">
+    app:startDestination="@id/fragmentHomePage">
 
     <fragment
         android:id="@+id/fragmentWelcome"
         android:name="com.example.telcellregistration.fragment.FragmentWelcome"
         android:label="FragmentWelcome"
-        tools:layout="@layout/welcome_fragment" >
+        tools:layout="@layout/welcome_fragment">
         <action
             android:id="@+id/action_fragmentWelcome_to_fragmentLogIn"
             app:destination="@id/fragmentLogIn" />
@@ -29,4 +29,28 @@
         android:name="com.example.telcellregistration.fragment.FragmentPasswordCreating"
         android:label="FragmentPasswordCreating"
         tools:layout="@layout/password_creating_layout" />
+    <fragment
+        android:id="@+id/fragmentHomePage"
+        android:name="com.example.telcellregistration.fragment.FragmentHomePage"
+        android:label="FragmentHomePage"
+        tools:layout="@layout/home_page_fragment">
+        <action
+            android:id="@+id/action_fragmentHomePage_to_fragmentBonus"
+            app:destination="@id/fragmentBonus" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBonus"
+        android:name="com.example.telcellregistration.fragment.FragmentBonus"
+        android:label="FragmentBonus"
+        tools:layout="@layout/bonus_fragment" />
+    <fragment
+        android:id="@+id/fragmentQr"
+        android:name="com.example.telcellregistration.fragment.FragmentQr"
+        android:label="FragmentQr"
+        tools:layout="@layout/qr_fragment_layout" />
+    <fragment
+        android:id="@+id/fragmentBanking"
+        android:name="com.example.telcellregistration.fragment.FragmentBanking"
+        android:label="FragmentBanking"
+        tools:layout="@layout/banking_fragment_layout" />
 </navigation>
