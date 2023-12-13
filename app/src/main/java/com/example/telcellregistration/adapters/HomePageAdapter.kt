@@ -79,22 +79,22 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
             }
             HomeItemsEnums.BANNERS_LIST_DATA.ordinal -> {
                 val myBannerListHolder = holder as BannerListViewHolder
-                myBannerListHolder.bind(item as BannersListData)
+                myBannerListHolder.bind(item as BannersData)
                 myBannerListHolder.setBannerItemClickListener(homeItemClickListener)
             }
             HomeItemsEnums.SERVICES_LIST_DATA.ordinal -> {
                 val myServiceListHolder = holder as ServicesListViewHolder
-                myServiceListHolder.bind(item as ServicesListData)
+                myServiceListHolder.bind(item as ServicesData)
                 myServiceListHolder.setServiceItemClickListener(homeItemClickListener)
             }
             HomeItemsEnums.HISTORY_LIST_DATA.ordinal -> {
                 val myHistoryListViewHolder = holder as HistoryListViewHolder
-                myHistoryListViewHolder.bind(item as HistoryListData)
+                myHistoryListViewHolder.bind(item as HistoriesData)
                 myHistoryListViewHolder.setHistoryItemClickListener(homeItemClickListener)
             }
             HomeItemsEnums.SPECIAL_OFFERS_LIST_DATA.ordinal -> {
                 val mySpecialOffersViewHolder = holder as SpecialOffersViewHolder
-                mySpecialOffersViewHolder.bind(item as SpecialOfferListData)
+                mySpecialOffersViewHolder.bind(item as SpecialOffersData)
                 mySpecialOffersViewHolder.setSpecialOfferItemClickListener(homeItemClickListener)
             }
             HomeItemsEnums.CHOSEN_PAYMENT_DATA.ordinal -> {

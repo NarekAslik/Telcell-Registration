@@ -1,0 +1,145 @@
+{
+  "bnplData": {
+    "header": "Վճարիր հետո",
+    "message": "Գնիր հիմա վճարիր մաս-մաս աոանց % մինչև 1 400 000",
+    "text": "Ստացիր 3% դեպոզիտ անվճար VISA քարտով",
+    "image": "https://t3.ftcdn.net/jpg/04/40/22/62/240_F_440226268_PtUfKYNIleT0OewQ1Vqnm3tWc4ZVDUeS.jpg"
+  },
+  "balanceData": {
+    "balance": "1000"
+  },
+  "bannersData": {
+    "bannersList": [
+      {
+        "bannerText": "Ուղետոմսեր",
+        "bannerImage": "https://jajpurbusiness.com/wp-content/uploads/2022/04/BUS-2.png"
+      },
+      {
+        "bannerText": "Խաղարկություն",
+        "bannerImage": "https://1.bp.blogspot.com/-GWo5yq8S2_c/X73FRUR3a2I/AAAAAAAARxA/hc0PXepcIegCDCbKWroIWGohyddt0oYNQCLcBGAsYHQ/s1132/vivo-sealed-with-a-wish-1.png"
+      },
+      {
+        "bannerText": "Իվենթներ",
+        "bannerImage": "https://cdn.pixabay.com/photo/2016/02/16/12/56/events-1203275_640.jpg"
+      },
+      {
+        "bannerText": "5 քարտ մեկ հավելվածում",
+        "bannerImage": "https://play-lh.googleusercontent.com/-299ELaxhknkzcXYKHgz6YFOLqflfUKQrzJuSXkv-IkgspnAwW_6MZoy-pyalDGkCqo"
+      },
+      {
+        "bannerText": "Դու կարող ես օգնել",
+        "bannerImage": "https://www.bhf.org.uk/-/media/images/landing-page-images/how-you-can-help-lpc4-volunteer-hands-570x460.png?rev=b2199264b8a1404e9b86ae87f5edc396"
+      },
+      {
+        "bannerText": "Վարկ մեքենայի գրավադրմամբ",
+        "bannerImage": "https://www.loancentercanada.com/wp-content/uploads/2022/06/bnr.jpg"
+      },
+      {
+        "bannerText": "BON մարքեթ",
+        "bannerImage": "https://www.canarahsbclife.com/content/dam/choice/blog-inner/images/types-of-bonuses-under-life-insurance-policy.jpg"
+      },
+      {
+        "bannerText": "Փոխանցում ՀՀ ցանկացած բանկային քարտի",
+        "bannerImage": "https://static.bankbazaar.com/images/india/infographic/credit-card-balance-transfer.webp"
+      }
+    ]
+  },
+  "servicesData": {
+    "servicesList": [
+      {
+        "serviceIcon": "https://classroomclipart.com/image/static7/preview2/bright-colored-passenger-bus-clip-art-59191.jpg",
+        "serviceText": "Տրանսպորտ"
+      },
+      {
+        "serviceIcon": "https://classroomclipart.com/image/static7/preview2/bright-colored-passenger-bus-clip-art-59191.jpg",
+        "serviceText": "Տրանսպորտ"
+      },
+      {
+        "serviceIcon": "https://classroomclipart.com/image/static7/preview2/bright-colored-passenger-bus-clip-art-59191.jpg",
+        "serviceText": "Տրանսպորտ"
+      },
+      {
+        "serviceIcon": "https://classroomclipart.com/image/static7/preview2/bright-colored-passenger-bus-clip-art-59191.jpg",
+        "serviceText": "Տրանսպորտ"
+      },
+      {
+        "serviceIcon": "https://classroomclipart.com/image/static7/preview2/bright-colored-passenger-bus-clip-art-59191.jpg",
+        "serviceText": "Տրանսպորտ"
+      }
+    ]
+  },
+  "chosenPaymentData": {
+    "isCopied": "true"
+  },
+  "historiesData": {
+    "historyListData": [
+      {
+        "icon": "https://assets.materialup.com/uploads/b89ba62f-4690-4e68-9131-df62f9413659/preview.jpg",
+        "actionNameText": "քարտի համալրում",
+        "toActionId": "431829**7905",
+        "amountText": "+8000 AMD",
+        "isApproved": "true"
+      },
+      {
+        "icon": "https://assets.materialup.com/uploads/b89ba62f-4690-4e68-9131-df62f9413659/preview.jpg",
+        "actionNameText": "քարտի համալրում",
+        "toActionId": "431829**7905",
+        "amountText": "+8000 AMD",
+        "isApproved": "true"
+      },
+      {
+        "icon": "https://assets.materialup.com/uploads/b89ba62f-4690-4e68-9131-df62f9413659/preview.jpg",
+        "actionNameText": "քարտի համալրում",
+        "toActionId": "431829**7905",
+        "amountText": "+8000 AMD",
+        "isApproved": "true"
+      },
+      {
+        "icon": "https://assets.materialup.com/uploads/b89ba62f-4690-4e68-9131-df62f9413659/preview.jpg",
+        "actionNameText": "քարտի համալրում",
+        "toActionId": "431829**7905",
+        "amountText": "+8000 AMD",
+        "isApproved": "true"
+      },
+      {
+        "icon": "https://assets.materialup.com/uploads/b89ba62f-4690-4e68-9131-df62f9413659/preview.jpg",
+        "actionNameText": "քարտի համալրում",
+        "toActionId": "431829**7905",
+        "amountText": "+8000 AMD",
+        "isApproved": "true"
+      }
+    ]
+  },
+  "specialOffersData": {
+    "specialOfferList": [
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      },
+      {
+        "imageView": "https://zeevector.com/wp-content/uploads/20-Off-Discount-Images-PNG.png",
+        "textView": "20 % ԶԵՂՉ"
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@ package com.example.telcellregistration.dataclasses
 import com.example.telcellregistration.enums.HomeItemsEnums
 import com.example.telcellregistration.interfaces.HomeItems
 
-data class HistoryListData(
+data class HistoriesData(
     val historyListData: List<HistoryData>
 ) : HomeItems {
     override fun viewType(): Int {

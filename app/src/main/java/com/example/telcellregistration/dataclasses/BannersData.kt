@@ -3,7 +3,7 @@ package com.example.telcellregistration.dataclasses
 import com.example.telcellregistration.enums.HomeItemsEnums
 import com.example.telcellregistration.interfaces.HomeItems
 
-data class BannersListData(
+data class BannersData(
     val bannersList: List<BannerData>
 ) : HomeItems {
     override fun viewType(): Int {

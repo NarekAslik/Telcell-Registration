@@ -3,9 +3,9 @@ package com.example.telcellregistration.dataclasses
 data class Items(
     val bnplData: BnplData,
     val balanceData: MyBalanceData,
-    val bannersListData: BannersListData,
-    val servicesListData: ServicesListData,
+    val bannersData: BannersData,
+    val servicesData: ServicesData,
     val chosenPaymentData: ChosenPaymentData,
-    val historyListData: HistoryListData,
-    val specialOfferListData: SpecialOfferListData
+    val historiesData: HistoriesData,
+    val specialOffersData: SpecialOffersData
 )

@@ -8,8 +8,13 @@ class Repository {
 
     private val service = Retrofit.api
 
-    suspend fun getItems():Response<Items>{
+    suspend fun getItems(): Response<Items> {
         return service.getItems()
     }
-    companion object
+
+    companion object {
+        fun newInstance(): Repository {
+            return Repository()
+        }
+    }
 }

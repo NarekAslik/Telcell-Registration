@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.telcellregistration.R
 import com.example.telcellregistration.databinding.ServiceItemBinding
-import com.example.telcellregistration.dataclasses.ServicesData
+import com.example.telcellregistration.dataclasses.ServiceData
 import com.example.telcellregistration.interfaces.HomeItemClickListener
 
 class ServicesAdapter : RecyclerView.Adapter<ServicesAdapter.ServicesHolder>() {
     private var homeItemClickListener: HomeItemClickListener? = null
-    private var servicesList = ArrayList<ServicesData>()
+    private var servicesList = ArrayList<ServiceData>()
 
     class ServicesHolder(val binding: ServiceItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -40,7 +40,7 @@ class ServicesAdapter : RecyclerView.Adapter<ServicesAdapter.ServicesHolder>() {
     override fun getItemCount(): Int = servicesList.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setServicesList(list: List<ServicesData>) {
+    fun setServicesList(list: List<ServiceData>) {
         servicesList = arrayListOf()
         servicesList.addAll(list)
         notifyDataSetChanged()
