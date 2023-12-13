@@ -12,7 +12,7 @@ data class HistoryListData(
 }
 
 data class HistoryData(
-    val icon: Int,
+    val icon: String,
     val actionNameText: String,
     val toActionId: String,
     val amountText: String,

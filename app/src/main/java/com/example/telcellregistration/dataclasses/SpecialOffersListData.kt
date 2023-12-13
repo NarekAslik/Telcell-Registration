@@ -12,6 +12,6 @@ data class SpecialOfferListData(
 }
 
 data class SpecialOfferData(
-    val imageView: Int,
+    val imageView: String,
     val textView: String
 )

@@ -10,7 +10,7 @@ class MyBalanceHolder(private val binding: BalanceViewBinding) :
     private var homeItemClickListener: HomeItemClickListener? = null
     fun bind(myBalanceData: MyBalanceData) {
         binding.apply {
-            balance.text = myBalanceData.balance.toString()
+            balance.text = myBalanceData.balance
             eyeIcon.setOnClickListener {
                 homeItemClickListener?.eyeIconClick(myBalanceData)
             }

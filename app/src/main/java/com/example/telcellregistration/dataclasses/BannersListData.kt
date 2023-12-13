@@ -13,5 +13,5 @@ data class BannersListData(
 
 data class BannerData(
     val bannerText: String,
-    val bannerImage: Int,
+    val bannerImage: String,
 )

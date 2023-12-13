@@ -12,6 +12,6 @@ data class ServicesListData(
 }
 
 data class ServicesData(
-    val serviceIcon: Int,
+    val serviceIcon: String,
     val serviceText: String
 )
