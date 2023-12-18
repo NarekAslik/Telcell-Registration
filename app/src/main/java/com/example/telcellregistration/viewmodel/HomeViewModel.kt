@@ -2,7 +2,7 @@ package com.example.telcellregistration.viewmodel
 
 
 import androidx.lifecycle.ViewModel
-import com.example.telcellregistration.Repository
+import com.example.telcellregistration.repository.Repository
 import com.example.telcellregistration.interfaces.HomeItems
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

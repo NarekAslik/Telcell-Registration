@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bonus_item_constraint_background"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/productPicture"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bonus_vertical_rc_item_image_background"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sturbucks"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bonusPicture"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/bonuse_picture_background"
+        android:clipToOutline="true"
+        android:padding="5dp"
+        android:src="@drawable/b_picture"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/productPicture"
+        app:layout_constraintTop_toTopOf="@id/productPicture" />
+
+    <TextView
+        android:id="@+id/productNameTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="бодряший кофе"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/bonusPicture"
+        app:layout_constraintTop_toTopOf="@id/bonusPicture" />
+
+    <TextView
+        android:id="@+id/productOwnerTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee House"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/productNameTvView"
+        app:layout_constraintTop_toBottomOf="@id/productNameTvView" />
+
+    <TextView
+        android:id="@+id/aboutBonusesTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="обменяй свои BON-ы на два кофе"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/productOwnerTvView"
+        app:layout_constraintTop_toBottomOf="@id/productOwnerTvView" />
+
+    <TextView
+        android:id="@+id/productTermTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="01 դեկ - 31 դեկ"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/productPicture"
+        app:layout_constraintRight_toRightOf="@id/productPicture"
+        app:layout_constraintTop_toBottomOf="@id/productPicture" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/productCountProgress"
+        android:layout_width="0dp"
+        android:layout_height="11dp"
+        android:background="@drawable/bonuse_picture_background"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintLeft_toLeftOf="@id/aboutBonusesTvView"
+        app:layout_constraintRight_toRightOf="@id/aboutBonusesTvView"
+        app:layout_constraintTop_toTopOf="@id/productTermTvView" />
+
+    <TextView
+        android:id="@+id/countTvView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bonus_item_count_background"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/orange"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/productTermTvView"
+        app:layout_constraintTop_toBottomOf="@id/productTermTvView" />
+
+    <TextView
+        android:id="@+id/productValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2500 B"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintRight_toRightOf="@id/productCountProgress"
+        app:layout_constraintTop_toTopOf="@id/countTvView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

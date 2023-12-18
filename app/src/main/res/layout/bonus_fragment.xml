@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/bonusTextTitleTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Bon"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bonusAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="1500"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bonusImageView"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/bonusAmountTextView"
+        app:layout_constraintTop_toTopOf="@id/bonusAmountTextView" />
+
+    <TextView
+        android:id="@+id/bonusTermTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Մինչև 29 փտվ 2024"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bonusAmountTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontalRcView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/bonusTermTvView"
+        tools:listitem="@layout/bonus_page_horiz_rc_view_item" />
+
+    <TextView
+        android:id="@+id/bonusPageTopGoodsTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="TOP ապրանքներ"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"
+        app:layout_constraintLeft_toLeftOf="@+id/horizontalRcView"
+        app:layout_constraintTop_toBottomOf="@id/horizontalRcView" />
+
+    <TextView
+        android:id="@+id/bonusPageSeeAllTvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="@string/see_all_services"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bonusPageTopGoodsTvView"
+        app:layout_constraintRight_toRightOf="@id/horizontalRcView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/verticalRcView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bonusPageSeeAllTvView"
+        tools:listitem="@layout/bonus_page_vertical_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
