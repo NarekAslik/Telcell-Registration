@@ -15,7 +15,7 @@ class FragmentQr : Fragment(R.layout.qr_fragment_layout) {
     lateinit var binding: QrFragmentLayoutBinding
 
     private val qrCodeAdapter: QrCodeAdapter by lazy {
-        QrCodeAdapter(parentFragmentManager, lifecycle)
+        QrCodeAdapter(childFragmentManager, lifecycle)
     }
 
 

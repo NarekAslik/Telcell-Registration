@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/productPicture"
-        android:layout_width="120dp"
+        android:layout_width="60dp"
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:background="@drawable/bonus_vertical_rc_item_image_background"

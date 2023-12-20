@@ -7,7 +7,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface API {
-    @GET("b/HKD8")
+    @GET("b/1MJC")
     suspend fun getItems(): Response<Items>
 
     @GET("b/JK75")

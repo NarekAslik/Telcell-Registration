@@ -3,6 +3,7 @@ package com.example.telcellregistration.fragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,7 +18,7 @@ class FragmentBonus : Fragment(R.layout.bonus_fragment) {
     private lateinit var binding: BonusFragmentBinding
     private val bonusPageFiltersAdapter = BonusPageFiltersAdapter()
     private val topGoodsAdapter = TopGoodsAdapter()
-    private val bonusPageViewModel = BonusPageViewModel()
+    private val bonusPageViewModel : BonusPageViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

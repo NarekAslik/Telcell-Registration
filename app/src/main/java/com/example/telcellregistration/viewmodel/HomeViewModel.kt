@@ -17,8 +17,8 @@ class HomeViewModel : ViewModel() {
     fun getHomeItems() {
         CoroutineScope(Dispatchers.IO).launch {
             val data = repository.getItems().body()
-            if (data != null){
-                homeItemsListFlow.value= arrayListOf(
+            if (data != null) {
+                homeItemsListFlow.value = arrayListOf(
                     data.bnplData,
                     data.balanceData,
                     data.bannersData,
@@ -26,7 +26,6 @@ class HomeViewModel : ViewModel() {
                     data.chosenPaymentData,
                     data.historiesData,
                     data.specialOffersData
-
                 )
             }
         }

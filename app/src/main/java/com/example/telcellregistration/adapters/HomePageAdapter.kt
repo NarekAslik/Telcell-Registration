@@ -75,7 +75,6 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
             HomeItemsEnums.MY_BALANCE_DATA.ordinal -> {
                 val myBalanceHolder = holder as MyBalanceHolder
                 myBalanceHolder.bind(item as MyBalanceData)
-                myBalanceHolder.setEyeIconClickListener(homeItemClickListener)
             }
             HomeItemsEnums.BANNERS_LIST_DATA.ordinal -> {
                 val myBannerListHolder = holder as BannerListViewHolder
@@ -114,27 +113,7 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    fun setBannerItemClickListener(listener: HomeItemClickListener) {
-        homeItemClickListener = listener
-    }
-
-    fun setBnplItemClickListener(listener: HomeItemClickListener) {
-        homeItemClickListener = listener
-    }
-
-    fun setEyeIconClickListener(listener: HomeItemClickListener) {
-        homeItemClickListener = listener
-    }
-
-    fun setServiceItemClickListener(listener: HomeItemClickListener) {
-        homeItemClickListener = listener
-    }
-
-    fun setHistoryItemClickListener(listener: HomeItemClickListener) {
-        homeItemClickListener = listener
-    }
-
-    fun setSpecialOfferItemClickListener(listener: HomeItemClickListener) {
+    fun setHomeItemClickListener(listener: HomeItemClickListener) {
         homeItemClickListener = listener
     }
 }

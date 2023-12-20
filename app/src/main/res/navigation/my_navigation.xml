@@ -10,9 +10,6 @@
         android:name="com.example.telcellregistration.fragment.FragmentWelcome"
         android:label="FragmentWelcome"
         tools:layout="@layout/welcome_fragment">
-        <action
-            android:id="@+id/action_fragmentWelcome_to_fragmentLogIn"
-            app:destination="@id/fragmentLogIn" />
     </fragment>
     <fragment
         android:id="@+id/fragmentLogIn"
@@ -34,9 +31,6 @@
         android:name="com.example.telcellregistration.fragment.FragmentHomePage"
         android:label="FragmentHomePage"
         tools:layout="@layout/home_page_fragment">
-        <action
-            android:id="@+id/action_fragmentHomePage_to_fragmentBonus"
-            app:destination="@id/fragmentBonus" />
     </fragment>
     <fragment
         android:id="@+id/fragmentBonus"
@@ -53,4 +47,9 @@
         android:name="com.example.telcellregistration.fragment.FragmentBanking"
         android:label="FragmentBanking"
         tools:layout="@layout/banking_fragment_layout" />
+    <fragment
+        android:id="@+id/fragmentEmpty"
+        android:name="com.example.telcellregistration.fragment.FragmentEmpty"
+        android:label="FragmentEmpty"
+        tools:layout="@layout/empty_layout"/>
 </navigation>

@@ -2,28 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/home"
+        android:id="@+id/fragmentHomePage"
         android:icon="@drawable/iic_home"
         android:orderInCategory="1"
         android:title="Գլխավոր"
         app:showAsAction="ifRoom">
     </item>
     <item
-        android:id="@+id/bonus"
+        android:id="@+id/fragmentBonus"
         android:icon="@drawable/ic_bon"
         android:orderInCategory="2"
         android:title="BON"
         app:showAsAction="ifRoom">
     </item>
     <item
-        android:id="@+id/qrCode"
+        android:id="@+id/fragmentQr"
         android:icon="@drawable/ic_qr"
         android:orderInCategory="3"
         android:title="QR կոդ"
         app:showAsAction="ifRoom">
     </item>
     <item
-        android:id="@+id/banking"
+        android:id="@+id/fragmentBanking"
         android:icon="@drawable/ic_banking"
         android:orderInCategory="4"
         android:title="Բանկինգ"
