@@ -30,8 +30,7 @@
         android:id="@+id/fragmentHomePage"
         android:name="com.example.telcellregistration.fragment.FragmentHomePage"
         android:label="FragmentHomePage"
-        tools:layout="@layout/home_page_fragment">
-    </fragment>
+        tools:layout="@layout/home_page_fragment"></fragment>
     <fragment
         android:id="@+id/fragmentBonus"
         android:name="com.example.telcellregistration.fragment.FragmentBonus"
@@ -51,5 +50,25 @@
         android:id="@+id/fragmentEmpty"
         android:name="com.example.telcellregistration.fragment.FragmentEmpty"
         android:label="FragmentEmpty"
-        tools:layout="@layout/empty_layout"/>
+        tools:layout="@layout/empty_layout" />
+    <fragment
+        android:id="@+id/fragmentSupplement"
+        android:name="com.example.telcellregistration.fragment.FragmentSupplement"
+        android:label="FragmentSupplement"
+        tools:layout="@layout/supplement_layout" />
+    <fragment
+        android:id="@+id/fragmentCardClose"
+        android:name="com.example.telcellregistration.fragment.FragmentCardClose"
+        android:label="FragmentCardClose"
+        tools:layout="@layout/card_close_layout_fragment" />
+    <fragment
+        android:id="@+id/fragmentCardClosed"
+        android:name="com.example.telcellregistration.fragment.FragmentCardClosed"
+        android:label="FragmentCardClosed"
+        tools:layout="@layout/card_closed_layout_fragment" />
+    <dialog
+        android:id="@+id/discardDialogFragment"
+        android:name="com.example.telcellregistration.dialog.DiscardDialogFragment"
+        android:label="DiscardDialogFragment"
+        tools:layout="@layout/discard_layout"/>
 </navigation>

@@ -12,7 +12,6 @@ import com.example.telcellregistration.enums.HomeItemsEnums
 import com.example.telcellregistration.holders.*
 import com.example.telcellregistration.interfaces.HomeItemClickListener
 import com.example.telcellregistration.interfaces.HomeItems
-
 @Suppress("UNCHECKED_CAST")
 class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
     private var homeItemClickListener: HomeItemClickListener? = null
@@ -21,7 +20,6 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
     override fun getItemViewType(position: Int): Int {
         return homeItemsList[position].viewType()
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return when (viewType) {
             HomeItemsEnums.BNPL_DATA.ordinal -> {
@@ -59,10 +57,8 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
                     .inflate(R.layout.special_offers_layout, parent, false)
                 SpecialOffersViewHolder(SpecialOffersLayoutBinding.bind(view))
             }
-
         }
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = homeItemsList[position]
 
@@ -75,6 +71,7 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
             HomeItemsEnums.MY_BALANCE_DATA.ordinal -> {
                 val myBalanceHolder = holder as MyBalanceHolder
                 myBalanceHolder.bind(item as MyBalanceData)
+                myBalanceHolder.setPlusIconClickListener(homeItemClickListener)
             }
             HomeItemsEnums.BANNERS_LIST_DATA.ordinal -> {
                 val myBannerListHolder = holder as BannerListViewHolder
@@ -100,10 +97,8 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
                 val myChosenPaymentViewHolder = holder as ChosenPaymentViewHolder
                 myChosenPaymentViewHolder.bind(item as ChosenPaymentData)
             }
-
         }
     }
-
     override fun getItemCount(): Int = homeItemsList.size
 
     @SuppressLint("NotifyDataSetChanged")
@@ -112,7 +107,6 @@ class HomePageAdapter : RecyclerView.Adapter<ViewHolder>() {
         homeItemsList.addAll(list)
         notifyDataSetChanged()
     }
-
     fun setHomeItemClickListener(listener: HomeItemClickListener) {
         homeItemClickListener = listener
     }

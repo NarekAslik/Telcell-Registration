@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.telcellregistration.R
 import com.example.telcellregistration.databinding.BalanceViewBinding
 import com.example.telcellregistration.dataclasses.MyBalanceData
+import com.example.telcellregistration.interfaces.HomeItemClickListener
 
 class MyBalanceHolder(private val binding: BalanceViewBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
+    private var homeItemClickListener: HomeItemClickListener? = null
     fun bind(myBalanceData: MyBalanceData) {
         binding.apply {
             balance.setText(myBalanceData.balance)
@@ -27,6 +29,12 @@ class MyBalanceHolder(private val binding: BalanceViewBinding) :
                     eyeIcon.setImageResource(R.drawable.close_eye)
                 }
             }
+            plusIcon.setOnClickListener {
+                homeItemClickListener?.plusIconClickListener(myBalanceData)
+            }
         }
+    }
+    fun setPlusIconClickListener(listener: HomeItemClickListener?) {
+        homeItemClickListener = listener
     }
 }

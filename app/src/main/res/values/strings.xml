@@ -14,4 +14,7 @@
     <string name="approved">Հաստատված</string>
     <string name="special_offer_title">Հատուկ առաջարկներ</string>
     <string name="discount_info">Մեծ զեղչ</string>
+    <string name="card_close_tv_title">Close the card</string>
+    <string name="card_closing_reason">Please choose the option Why are you closing
+your card?</string>
 </resources>

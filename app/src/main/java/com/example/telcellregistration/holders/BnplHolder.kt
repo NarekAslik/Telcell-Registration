@@ -17,8 +17,11 @@ class BnplHolder(private val binding: BnplViewBinding) : RecyclerView.ViewHolder
             visaCardInfo.text = bnplData.text
             headerTvView.text = bnplData.header
             messageTvView.text = bnplData.message
-            itemView.setOnClickListener {
+            bnplContainer.setOnClickListener {
                 bnplClickListener?.bnplItemClick(bnplData)
+            }
+            visaImage.setOnClickListener {
+                bnplClickListener?.visaCardClick()
             }
         }
     }
